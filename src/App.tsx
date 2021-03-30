@@ -1,11 +1,12 @@
 import React from 'react';
+import './App.css';
 
 const App = () => {
   return (
-    <h1>
-      React App
-    </h1>
-  )
-}
+    <div className="App">
+      <h1>React app</h1>
+    </div>
+  );
+};
 
 export default App;

@@ -1,0 +1,11 @@
+:root {
+  --gray-100: #ededed;
+  --gray-200: #777777;
+  --gray-300: #444444;
+  --blue: #0011bb;
+  --purple: #6600cc;
+}
+
+.App {
+  font-family: sans-serif;
+}
