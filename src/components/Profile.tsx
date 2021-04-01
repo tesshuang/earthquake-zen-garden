@@ -13,23 +13,23 @@ const Profile: React.FC<ProfileProps> = ({ profile }) => {
       <div className="profile">
         <img src={avatarImage} alt={`${firstName} ${lastName}`} />
         <div>
-          <div className="info">
+          <div className="two-column">
             <h4>First name</h4>
             <p>{firstName}</p>
           </div>
-          <div className="info">
+          <div className="two-column">
             <h4>Last name</h4>
             <p>{lastName}</p>
           </div>
-          <div className="info">
+          <div className="two-column">
             <h4>Phone</h4>
             <p>{phone}</p>
           </div>
-          <div className="info">
+          <div className="two-column">
             <h4>Email</h4>
             <p>{email}</p>
           </div>
-          <div className="info">
+          <div className="two-column">
             <h4>Bio</h4>
             <p>{bio}</p>
           </div>

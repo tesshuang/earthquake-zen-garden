@@ -11,30 +11,28 @@ const Detail: React.FC<DetailProps> = ({ feature }) => {
   return (
     <div>
       <h3>{title}</h3>
-      <div className="two-column">
-        <h4>Title</h4>
-        <p>{place}</p>
-      </div>
-      <div className="two-column">
-        <h4>Magnitude</h4>
-        <p>{mag}</p>
-      </div>
-      <div className="two-column">
-        <h4>Time</h4>
-        <p>{formatDate(time)}</p>
-      </div>
-      <div className="two-column">
-        <h4>Status</h4>
-        <p>{status}</p>
-      </div>
-      <div className="two-column">
-        <h4>Tsunami</h4>
-        <p>{tsunami}</p>
-      </div>
-      <div className="two-column">
-        <h4>Type</h4>
-        <p>{type}</p>
-      </div>
+      <table className="content">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Magnitude</th>
+            <th>Time</th>
+            <th>Status</th>
+            <th>Tsunami</th>
+            <th>Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{place}</td>
+            <td>{mag}</td>
+            <td>{formatDate(time)}</td>
+            <td>{status}</td>
+            <td>{tsunami}</td>
+            <td>{type}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 };

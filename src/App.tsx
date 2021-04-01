@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Layout from './components/Layout';
 import Profile from './components/Profile';
 import Home from './components/Home';
+import Detail from './components/Detail';
 import dataJson from './data.json';
 import './App.css';
 
@@ -24,9 +25,16 @@ const App: React.FC = () => {
             <Route path="/profile">
               <Profile profile={profile} />
             </Route>
-            <Route path="/detail/:id">
-              <h1>Detail view</h1>
-            </Route>
+            <Route
+              path="/detail/:id"
+              render={({ match }) => (
+                <Detail
+                  feature={features.find(
+                    (feature) => feature.id === match.params.id,
+                  )}
+                />
+              )}
+            />
             <Route path="/">
               <Home pageTitle={metadata.title} features={features} />
             </Route>
