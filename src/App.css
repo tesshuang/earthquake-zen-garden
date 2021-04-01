@@ -47,12 +47,53 @@ main {
 .profile {
   display: flex;
 }
-.profile .info {
+
+.two-column {
   display: grid;
   grid-template-columns: 120px 1fr;
   text-align: left;
 }
-.profile .info p,
-.profile .info h4 {
+
+.two-column p,
+.two-column h4 {
   margin-top: 0px;
+}
+
+.home table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.home table th {
+  cursor: pointer;
+}
+
+.home table tbody {
+  border-top: 1rem solid transparent;
+}
+
+.home table tbody tr td:first-child {
+  text-align: left;
+}
+
+.home table td {
+  padding: 4px;
+}
+
+.content {
+  text-align: left;
+}
+
+.content thead,
+.content tbody {
+  float: left;
+}
+
+.content tbody {
+  border-left: 1rem solid transparent;
+}
+
+.content thead th,
+.content tbody td {
+  display: block;
 }
